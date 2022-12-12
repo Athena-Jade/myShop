@@ -1,0 +1,149 @@
+
+/*************** index.html  SLIDER *************/
+.slider {   
+   height: 70vh;
+    /* important */
+    position: relative;
+    
+}
+
+
+.slider img {
+    object-fit: cover;  
+    height: 70vh;   
+    width: 100%;
+    /* mettre les images les unes sur les autres */
+    position: absolute;
+    top: 0;   
+    left: 0;
+    /* de base l'opacité des images est à 0 */
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+
+
+/* si une classe active est sur une l'image alors l'opacité est de 1 */
+.slider img.active {
+    opacity: 1;    
+}
+
+
+/* boutons précédent et suivant */
+.suivant,
+.precedent {
+    color: rgb(232, 223, 225);
+    font-size: 3rem;
+    position: absolute;  
+    top: 80%;
+
+    /* décaler vers le haut */
+    transform: translateY(-40%);
+    cursor: pointer;
+}
+
+
+.suivant {
+    right: 1rem;
+}
+
+
+.precedent {
+    left: 1rem;
+}
+
+/**************** slogan  texte sur image slider ************/
+.slogan h1 {
+    position: absolute;   
+    top: 33%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+    font-size: 5rem;
+}
+
+/* texte_remise dans slider */
+.texte_remise h3 {
+    position: absolute;  
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+}
+
+.texte_remise span {
+    color: #ff4800;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+/************ MEDIAS QUERIES ************/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+    .texte_remise h3{
+       
+        top: 46%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    
+    /* slider image*/
+    .slider img{
+        height: 50vh;
+    }
+
+    .suivant, .precedent{
+        top: 50%;
+    }
+
+    /**/
+    .slogan h1{
+        font-size:4rem ;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .slogan h1{
+        font-size:3rem ;
+        left: 31%;
+    }
+
+    .texte_remise h3{
+        
+        left: 35%;
+    }
+}

@@ -1,0 +1,110 @@
+
+/*********** index.html   footer ***********/
+.footer {
+    background: #f9f9f9;  
+   margin-top: 0rem;
+}
+
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];  
+   grid-template-columns: repeat(auto-fit, 30rem);
+   justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;   
+    color: #ff4800;
+}
+
+.footer .box-container .box a:hover {
+    color: #ff4800;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .share {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    background: #130f40;
+    color: #fff;
+    margin: .3rem;
+}
+
+.footer .share a:hover {
+    background:#ff4800 ;    
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.footer .credit {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #666;
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: #eb4d4b;
+    color: #ff4800;
+}
+
+
+
+
+
+
+/************ MEDIAS QUERIES **************/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    
+}

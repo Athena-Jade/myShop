@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+/*font-family: 'Nerko One', cursive;*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #cfd7de;  
+    height: 200vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    background: #ff4800;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #130f40;
+}
+
+/**************** HEADER ******************/
+.header {
+    background-color: #122331;    
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.017);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    min-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    
+}
+
+
+.header a {
+    text-decoration: none;
+    color: white;   
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    
+}
+
+.header span{
+    text-transform: lowercase;
+    color:orange ;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: white;
+}
+
+.header .navbar a:hover {
+    color: #310fd6;
+    font-weight: bolder;
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: #f7f7f7;
+    color: #130f40;
+    border-radius: .5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    color: #fff;
+    background: orange;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+@-webkit-keyframes fadeUp {
+    0% {
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+
+
+
+/**************** NAVBAR ***************/
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-items li {
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-items li:hover {
+    background-color: orange;
+}
+
+
+/******* DROPDOWN MENU *******/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #122331;    
+    width: 100%;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;  
+    transition: all 0.3s ease;
+}
+
+/* les enfants */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+
+.dropdown:hover .dropdown-menu {
+    top: 34px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*********** chaussures.html,  blouses.html,  manteaux.html, robes.html, contact.html *********/
+.chaussures,
+.blouses,
+.manteaux,
+.robes,
+.contact_us {
+    margin-top: 1%;
+    margin-bottom: 100px;
+}
+
+
+.chaussures .box,
+.blouses .box,
+.manteaux .box,
+.robes .box {
+    display: flex;
+}
+
+/* span sur titre */
+.chaussures .box .titre1_span,
+.blouses .box .titre1_span,
+.manteaux .box .titre1_span,
+.robes .box .titre1_span {
+    color: #ff4800;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+.chaussures .content_chaussures,
+.blouses .content_blouses,
+.manteaux .content_manteaux,
+.robes .content_robes {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 0 10%;
+
+}
+
+
+/* chaussures, blouses, manteaux, robes, contact */
+.titre1 {
+    font-size: 5rem;
+    font-family: 'Nerko One', cursive;
+    padding: 2rem;
+    margin-left: 1rem;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.titre3 {
+    font-size: 1.45rem;
+    padding: 1rem;
+}
+
+.description {
+    font-size: 1.35rem;
+    padding: 0.5rem;
+}
+
+.price {
+    color: #ff4800;
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+
+
+/* blouses, manteaux, robes, chaussures */
+.image {
+    padding: 2rem 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: .5rem;
+    margin-bottom: 4rem;
+    position: relative;
+   
+}
+
+
+
+/* taille images */
+.chaussures .content_chaussures .image img,
+.blouses .content_blouses .image img,
+.manteaux .content_manteaux .image img,
+.robes .content_robes .image img {
+
+    max-width: 60%;
+    height: 50%;
+    object-fit: cover;
+
+    width: 60%;
+}
+
+
+/* remise sur blouses */
+.remise {
+    font-size: 1.6rem;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+}
+
+
+
+
+/********** ajout dans le panier************/
+.panier {
+    padding: 1.85rem;
+}
+
+.panier a {
+    text-decoration: none;
+}
+
+.panier i {
+    color: #122331;
+    font-size: 1.55rem;
+}
+
+
+.panier i:hover {
+    color: #ff4800;
+}
+
+
+/******** modalites *********/
+.modalites {
+    background: #eee;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;   
+    margin: 15rem 3%;
+  
+}
+
+.modalites .icons {
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;    
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    justify-content: center;
+    text-align: center;    
+    margin: 0 2%;
+  
+}
+
+.modalites .icons img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.modalites .icons h3 {
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.modalites .icons span {
+    color: #555;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** MEDIAS QUERIES **********/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;       
+        background-color: #122331;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+       
+        height: 51vh; 
+    
+       
+    }
+
+    .header .navbar.active {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a {   
+        font-size: 1.5rem;
+        margin: 2rem;
+        display: block;
+    }
+
+    /* j'ai ajouté */
+    .menu-items {
+        display: inline-block;
+    }
+
+    /* décaler sous menu vers droite */
+    .dropdown-menu {
+        left: 166px;
+    }
+
+
+
+    .menu-items li {
+        background-color: #122331;
+         width: 810%;
+       /* width: 709%;*/
+        padding: 0;
+    }
+
+    .chaussures, 
+    .blouses, .manteaux, 
+    .robes 
+    {      
+      margin-top: -113px;
+    }
+
+    .titre1{
+        font-size: 3rem;
+    }
+
+    .chaussures .box .titre1_span, 
+    .blouses .box .titre1_span, 
+    .manteaux .box .titre1_span, 
+    .robes .box .titre1_span{
+        font-size: 3rem;
+    }
+    
+    .btn{
+        font-size: 1.5rem;
+        padding: .9rem 1rem;
+    }
+    
+
+    
+    /*modalités */    
+    .modalites .icons h3{
+        font-size: 1.25rem;
+    }
+
+    /* tailles logo modalités */
+    .modalites .icons img {
+        height: 3rem;
+        margin-right: 2rem;
+    }    
+}
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    
+    
+}

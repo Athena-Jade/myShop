@@ -1,0 +1,73 @@
+
+/************** index.html  FORMULAIRE DE RECHERCHE ***************/
+.search-form-container {
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 8.5rem);
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.search-form-container.active {
+    display: block;
+}
+
+.search-form-container form {
+    height: 7rem;   
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-animation: fadeUp .4s linear;
+    animation: fadeUp .4s linear;
+}
+
+.search-form-container form input {
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: #130f40;
+    text-transform: none;
+    padding-right: 1rem;
+}
+
+.search-form-container form label {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #130f40;
+}
+
+.search-form-container form label:hover {
+    color: #27ae60;
+}
+
+
+
+
+
+/************ MEDIAS QUERIES**********/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    
+}
